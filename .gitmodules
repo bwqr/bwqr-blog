@@ -1,0 +1,42 @@
+[submodule "bwqr-mng/src/app/shared"]
+	path = bwqr-mng/src/app/shared
+	url = https://github.com/bwqr/fmblog-frontend-shared
+[submodule "bwqr-mng/src/app/navigation"]
+	path = bwqr-mng/src/app/navigation
+	url = https://github.com/bwqr/fmblog-frontend-navigation
+[submodule "bwqr-mng/src/app/core"]
+	path = bwqr-mng/src/app/core
+	url = https://github.com/bwqr/Angular-Module-Core
+[submodule "bwqr-mng/src/app/article"]
+	path = bwqr-mng/src/app/article
+	url = https://github.com/bwqr/Angular-Module-Article
+[submodule "bwqr-mng/src/app/admin"]
+	path = bwqr-mng/src/app/admin
+	url = https://github.com/bwqr/Angular-Module-Admin
+[submodule "bwqr-mng/src/app/image"]
+	path = bwqr-mng/src/app/image
+	url = https://github.com/bwqr/Angular-Module-Image
+[submodule "bwqr-mng/src/app/user"]
+	path = bwqr-mng/src/app/user
+	url = https://github.com/bwqr/Angular-Module-User
+[submodule "bwqr-api/app/Modules/Core"]
+	path = bwqr-api/app/Modules/Core
+	url = https://github.com/bwqr/Laravel-Module-Core
+[submodule "bwqr-api/app/Modules/Admin"]
+	path = bwqr-api/app/Modules/Admin
+	url = https://github.com/bwqr/Laravel-Module-Admin
+[submodule "bwqr-api/app/Modules/User"]
+	path = bwqr-api/app/Modules/User
+	url = https://github.com/bwqr/Laravel-Module-User
+[submodule "bwqr-api/app/Modules/Image"]
+	path = bwqr-api/app/Modules/Image
+	url = https://github.com/bwqr/Laravel-Module-Image
+[submodule "bwqr-api/app/Modules/Auth"]
+	path = bwqr-api/app/Modules/Auth
+	url = https://github.com/bwqr/Laravel-Module-Auth
+[submodule "bwqr-api/app/Modules/Article"]
+	path = bwqr-api/app/Modules/Article
+	url = https://github.com/bwqr/Laravel-Module-EditorArticle
+[submodule "bwqr-mng/src/app/auth"]
+	path = bwqr-mng/src/app/auth
+	url = https://github.com/bwqr/Angular-Module-Auth
