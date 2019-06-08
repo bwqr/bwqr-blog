@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://fm.test/'
+  apiUrl: 'http://bwqr.test/'
 };

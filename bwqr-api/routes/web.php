@@ -11,6 +11,34 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('storage/images/{image}', '\App\Modules\Image\Http\Controllers\ImageController@getImageFile');
+
+Route::get('storage/images/thumbs/{image}', '\App\Modules\Image\Http\Controllers\ImageController@getThumbImageFile');
+
+
+Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
+
+    Route::get('/test', function () {
+        return LaravelLocalization::getCurrentLocale();
+    });
+    Route::get('/', 'HomeController@index')->name('home');
+
+//    Route::get('/contact-us', 'ContactUsController@index')->name('contact-us');
+
+    Route::get('/about-us', 'AboutUsController@index')->name('about-us');
+
+//    Route::get('/faq', 'FAQController@index')->name('faq');
+
+    Route::get('/blog', function () {
+        return 'Under Construction <a href="/">Back to Main Page</a>';
+    })->name('blog');
+
+//    Route::get('/services/{service?}', 'ServiceController@index')->name('services');
+
+    Route::get('/articles/{article_slug}', 'ArticleController@index');
+
+    Route::get('/categories', 'CategoriesController@index');
+    Route::get('/category/{category_slug}', 'ArchiveController@category');
+
+    Route::get('/results', 'SearchController@getResults');
 });

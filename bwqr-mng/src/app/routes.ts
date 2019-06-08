@@ -1,4 +1,5 @@
 export const routes: any = {
+    main: { url: 'articles' },
     admin: {
         url: 'admin/',
         languages: { url: 'languages/' },
@@ -44,5 +45,21 @@ export const routes: any = {
         thumb: { url: 'thumb/' },
         images: { url: 'images/' },
         edit: { url: 'edit/' }
-      }
+    },
+    storage: {
+        url: 'storage/',
+        images: {
+            url: 'images/',
+            thumbs: {
+                url: 'thumbs/'
+            }
+        }
+    },
+    public: {
+        url: '',
+        image: {
+            url: 'images/',
+            author: { url: 'author/' }
+        }
+    }
 };
