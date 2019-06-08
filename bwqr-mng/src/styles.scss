@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+@import "styles/style";
+@import "bulma";
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+    background: rgb(204, 204, 204);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px hsla(0,0%,100%,.3);
+    border-radius: 2px;
+}
+
+.container {
+    width: auto !important;
+}
+
+.loading {
+    position: absolute !important;
+    top: 40%;
+    left: 45%;
+}
+//Action Center
+.action-center {
+    ul {
+        list-style: none;
+    }
+
+    li {
+        margin-right: 15px;
+        margin-bottom: 15px;
+        button {
+            min-width: 200px;
+            span {
+                float: left;
+            }
+            mat-icon {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+  
+/*BUTTON*/
+.add-btn {
+    position: fixed !important;
+    right: 3%;
+    bottom: 5%;
+    z-index: 10;
+}
+
+//Bulma Ext
+.is-12 {
+    width: 100%;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+  //Images
+.images .card .card-content {
+    background-color: $mat-toolbar-background;
+}
