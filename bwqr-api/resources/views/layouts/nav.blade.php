@@ -7,7 +7,7 @@
 
             <div class="header__logo">
                 <a class="logo" href="@localizeURL('')">
-                    <img src="/images/logo.png" alt="{{env('APP_NAME', 'Düşünce Kozası')}}">
+                    <img src="/images/logo.png" alt="{{env('APP_NAME', 'bwqr')}}">
                 </a>
             </div> <!-- end header__logo -->
 

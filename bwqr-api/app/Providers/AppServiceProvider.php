@@ -34,6 +34,11 @@ class AppServiceProvider extends ServiceProvider
                 "<?php echo LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), $expression) ?>";
         });
 
+        Blade::directive('datetime', function($expression) {
+            return
+                "<?php echo (new DateTime($expression))->format('d-m-Y H:i'); ?>";
+        });
+
         Article::observe(ArticleObserver::class);
 
         User::observe(UserObserver::class);
