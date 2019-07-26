@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://fm.test'
+  apiUrl: 'http://bwqr.test/'
 };
 
 /*

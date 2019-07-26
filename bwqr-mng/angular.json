@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fmblog-frontend-starter": {
+    "bwqr-blog": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -28,8 +28,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/cropperjs/dist/cropper.css",
-              "node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"
+              "node_modules/cropperjs/dist/cropper.css"
             ],
             "scripts": [
               "node_modules/tinymce/tinymce.min.js",
@@ -71,18 +70,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "fmblog-frontend-starter:build"
+            "browserTarget": "bwqr-blog:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "fmblog-frontend-starter:build:production"
+              "browserTarget": "bwqr-blog:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "fmblog-frontend-starter:build"
+            "browserTarget": "bwqr-blog:build"
           }
         },
         "test": {
@@ -116,7 +115,7 @@
         }
       }
     },
-    "fmblog-frontend-starter-e2e": {
+    "bwqr-blog-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -125,11 +124,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "fmblog-frontend-starter:serve"
+            "devServerTarget": "bwqr-blog:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "fmblog-frontend-starter:serve:production"
+              "devServerTarget": "bwqr-blog:serve:production"
             }
           }
         },
@@ -145,5 +144,5 @@
       }
     }
   },
-  "defaultProject": "fmblog-frontend-starter"
+  "defaultProject": "bwqr-blog"
 }

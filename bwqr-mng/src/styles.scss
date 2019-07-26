@@ -1,6 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/theming';
+
+// always include only once per project
+@include mat-core();
+
+// import our custom theme
+@import 'styles/themes/dark-bluish.scss';
+
 @import "styles/style";
 @import "bulma";
+
+// specify theme class eg: <body class="my-theme"> ... </body>
+// use our theme with angular-material-theme mixin
+@include angular-material-theme($dark-bluish-theme);
 
 ::-webkit-scrollbar {
     background: transparent;
@@ -62,9 +75,4 @@
 
 mat-form-field {
     width: 100%;
-}
-
-  //Images
-.images .card .card-content {
-    background-color: $mat-toolbar-background;
 }
