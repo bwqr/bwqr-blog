@@ -40,3 +40,6 @@
 [submodule "bwqr-mng/src/app/auth"]
 	path = bwqr-mng/src/app/auth
 	url = https://github.com/bwqr/Angular-Module-Auth
+[submodule "bwqr-mng/src/styles"]
+	path = bwqr-mng/src/styles
+	url = https://github.com/bwqr/fmblog-frontend-styles

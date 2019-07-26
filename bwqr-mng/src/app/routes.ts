@@ -1,7 +1,7 @@
 export const routes: any = {
     main: { url: 'articles' },
     admin: {
-        url: 'admin/',
+        url: 'api/admin/',
         languages: { url: 'languages/' },
         categories: { url: 'categories/' },
         menus: { url: 'menus/' },
@@ -13,7 +13,7 @@ export const routes: any = {
         permission: { url: 'permission/' }
     },
     auth: {
-        url: 'auth/',
+        url: 'api/auth/',
         register: { url: 'register/' },
         'reset-password': { url: 'reset-password/' },
         'is-authenticated': { url: 'is-authenticated/' },
@@ -21,7 +21,7 @@ export const routes: any = {
         logout: { url: 'logout/' }
     },
     user: {
-        url: 'user/',
+        url: 'api/user/',
         info: { url: 'info/' },
         menus: { url: 'menus/' },
         dashboard: { url: 'dashboard/' },
@@ -30,7 +30,7 @@ export const routes: any = {
         profile: { url: 'profile/' }
     },
     article: {
-        url: 'article/',
+        url: 'api/article/',
         article: { url: 'article/' },
         content: { url: 'content/' },
         restore: { url: 'restore/' },
@@ -40,7 +40,7 @@ export const routes: any = {
         trash: { url: 'trashed-articles/' },
     },
     image: {
-        url: 'image/',
+        url: 'api/image/',
         image: { url: 'image/' },
         thumb: { url: 'thumb/' },
         images: { url: 'images/' },
