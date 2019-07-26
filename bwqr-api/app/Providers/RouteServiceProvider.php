@@ -82,7 +82,7 @@ class RouteServiceProvider extends ServiceProvider
 
     protected function mapAdminRoutes()
     {
-        Route::prefix('admin')
+        Route::prefix('api/admin')
             ->middleware('api')
             ->namespace($this->moduleNamespace . "\Admin\Http\Controllers")
             ->group(base_path('app/Modules/Admin/Http/admin.php'));
@@ -90,7 +90,7 @@ class RouteServiceProvider extends ServiceProvider
 
     protected function mapArticleRoutes()
     {
-        Route::prefix('article')
+        Route::prefix('api/article')
             ->middleware('api')
             ->namespace($this->moduleNamespace . "\Article\Http\Controllers")
             ->group(base_path('app/Modules/Article/Http/article.php'));
@@ -98,7 +98,7 @@ class RouteServiceProvider extends ServiceProvider
 
     protected function mapAuthRoutes()
     {
-        Route::prefix('auth')
+        Route::prefix('api/auth')
             ->middleware('api')
             ->namespace($this->moduleNamespace . "\Auth\Http\Controllers")
             ->group(base_path('app/Modules/Auth/Http/auth.php'));
@@ -106,7 +106,7 @@ class RouteServiceProvider extends ServiceProvider
 
     protected function mapImageRoutes()
     {
-        Route::prefix('image')
+        Route::prefix('api/image')
             ->middleware('api')
             ->namespace($this->moduleNamespace . "\Image\Http\Controllers")
             ->group(base_path('app/Modules/Image/Http/image.php'));
@@ -114,7 +114,7 @@ class RouteServiceProvider extends ServiceProvider
 
     protected function mapUserRoutes()
     {
-        Route::prefix('user')
+        Route::prefix('api/user')
             ->middleware('api')
             ->namespace($this->moduleNamespace . "\User\Http\Controllers")
             ->group(base_path('app/Modules/User/Http/user.php'));

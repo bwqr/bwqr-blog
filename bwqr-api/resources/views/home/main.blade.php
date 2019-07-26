@@ -5,7 +5,7 @@
 
             @if(!empty($latest_big))
                 <div class="featured__column featured__column--big">
-                    <div class="entry" style="background-image:url('/image/image/{{$latest_big['image']}}');">
+                    <div class="entry" style="background-image:url('/storage/images/{{$latest_big['image']}}');">
 
                         <div class="entry__content">
                             @if(!empty($latest_big['categories']))
@@ -41,7 +41,7 @@
 
             <div class="featured__column featured__column--small">
                 @foreach($latest as $article)
-                    <div class="entry" style="background-image:url('/image/image/{{$article['image']}}');">
+                    <div class="entry" style="background-image:url('/storage/images/{{$article['image']}}');">
 
                         <div class="entry__content">
                             @if(!empty($article['categories']))
